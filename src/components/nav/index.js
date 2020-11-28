@@ -9,36 +9,39 @@ const Nav = ({ routeFunction }) => {
                 <h2>Unidade 1</h2>
             </Header>
             <Navigation>
-                <Link onClick={() => routeFunction('introducao')}>
-                    Introdução
+                <Link className="nav_link" onClick={(e) => routeFunction('introducao', e)}>
+                    <p>Introdução</p>
                 </Link>
-                <Link onClick={() => routeFunction('coordenador')}>
+                <Link className="nav_link" onClick={(e) => routeFunction('coordenador', e)}>
                     <p>Coordenador de Alimentos</p>
                     <p>e Bebidas</p>
                 </Link>
-                <Link onClick={() => routeFunction('chefeDeFila')}>
-                    Chefe de Fila
+                <Link className="nav_link" onClick={(e) => routeFunction('chefeDeFila', e)}>
+                    <p>Chefe de Fila</p>
                 </Link>
-                <Link onClick={() => routeFunction('bartender')}>
-                    Bartender
+                <Link className="nav_link" onClick={(e) => routeFunction('bartender', e)}>
+                    <p>Bartender</p>
                 </Link>
-                <Link onClick={() => routeFunction('garcom')}>
-                    Garçom
+                <Link className="nav_link" onClick={(e) => routeFunction('garcom', e)}>
+                    <p>Garçom</p>
                 </Link>
-                <Link onClick={() => routeFunction('cumim')}>
-                    Cumim
+                <Link className="nav_link" onClick={(e) => routeFunction('cumim', e)}>
+                    <p>Cumim</p>
                 </Link>
-                <Link onClick={() => routeFunction('chefeDeCozinha')}>
-                    Chefe de Cozinha
+                <Link className="nav_link" onClick={(e) => routeFunction('chefeDeCozinha', e)}>
+                    <p>Chefe de Cozinha</p>
                 </Link>
-                <Link onClick={() => routeFunction('auxiliarDeCozinha')}>
-                    Auxiliar de Cozinha
+                <Link className="nav_link" onClick={(e) => routeFunction('auxiliarDeCozinha', e)}>
+                    <p> Auxiliar de Cozinha</p>
                 </Link>
-                <Link onClick={() => routeFunction('uniforme')}>
-                    Uniforme
+                <Link className="nav_link" onClick={(e) => routeFunction('uniforme', e)}>
+                    <p>Uniforme</p>
                 </Link>
-                <Link onClick={() => routeFunction('crachas')}>
-                    Crachás de Identificação
+                <Link className="nav_link" onClick={(e) => routeFunction('crachas', e)}>
+                    <p>Crachás de Identificação</p>
+                </Link>
+                <Link className="nav_link" onClick={(e) => routeFunction('quiz', e)}>
+                    <p>Quiz</p>
                 </Link>
             </Navigation>
         </Container>

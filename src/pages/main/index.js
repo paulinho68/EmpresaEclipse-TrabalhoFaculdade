@@ -12,11 +12,22 @@ import ChefeDeCozinha from '../../components/chefeDeCozinha';
 import AuxiliarDeCozinha from '../../components/auxiliarDeCozinha';
 import Uniforme from '../../components/uniforme';
 import Crachas from '../../components/crachas';
+import Quiz from '../../components/quiz';
 
 const Main = () => {
     const [route, setRoutes] = useState(<Introducao />);
 
-    const routeFunction = (name = 'introducao') => {
+    const routeFunction = (name = 'introducao', e) => {
+
+        if (!!e) {
+            const elements = document.getElementsByClassName('nav_link');
+            for (let item of elements) {
+                item.style.color = '#FFF'
+            }
+            console.log(elements);
+            e.currentTarget.style.color = '#D9D4BF';
+        }
+
         if (name === 'introducao') {
             setRoutes(<Introducao />);
         } else if (name === 'coordenador') {
@@ -37,6 +48,8 @@ const Main = () => {
             setRoutes(<Uniforme />);
         } else if (name === 'crachas') {
             setRoutes(<Crachas />);
+        } else if (name === 'quiz') {
+            setRoutes(<Quiz />);
         } else {
             setRoutes(<Introducao />);
         }

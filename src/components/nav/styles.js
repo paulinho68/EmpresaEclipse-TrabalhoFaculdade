@@ -41,15 +41,17 @@ export const Link = styled.button`
     border:none;
 
     p{
-        transition: all 0.5s;
+        transition: all 0.2s;
         margin: 2.5px 0;
     }
 
     &:hover{
         p{
-            font-size:20px;
+            font-size:19px;
+            margin-left:15px;
         }
-        font-size:20px;    
+        font-size:19px;    
+        padding-left:15px;
     }
 
 `;
