@@ -17,26 +17,28 @@ const Main = () => {
     const [route, setRoutes] = useState(<Introducao />);
 
     const routeFunction = (name = 'introducao') => {
-        if (name == 'introducao') {
+        if (name === 'introducao') {
             setRoutes(<Introducao />);
-        } else if (name == 'coordenador') {
+        } else if (name === 'coordenador') {
             setRoutes(<Coordenador />);
-        } else if (name == 'chefeDeFila') {
+        } else if (name === 'chefeDeFila') {
             setRoutes(<ChefeDeFila />);
-        } else if (name == 'bartender') {
+        } else if (name === 'bartender') {
             setRoutes(<Bartender />);
-        } else if (name == 'garcom') {
+        } else if (name === 'garcom') {
             setRoutes(<Garcom />);
-        } else if (name == 'cumim') {
+        } else if (name === 'cumim') {
             setRoutes(<Cumim />);
-        } else if (name == 'chefeDeCozinha') {
+        } else if (name === 'chefeDeCozinha') {
             setRoutes(<ChefeDeCozinha />);
-        } else if (name == 'auxiliarDeCozinha') {
+        } else if (name === 'auxiliarDeCozinha') {
             setRoutes(<AuxiliarDeCozinha />);
-        } else if (name == 'uniforme') {
+        } else if (name === 'uniforme') {
             setRoutes(<Uniforme />);
-        } else if (name == 'crachas') {
+        } else if (name === 'crachas') {
             setRoutes(<Crachas />);
+        } else {
+            setRoutes(<Introducao />);
         }
     }
 
