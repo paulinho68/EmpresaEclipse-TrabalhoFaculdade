@@ -16,42 +16,27 @@ import Crachas from '../../components/crachas';
 const Main = () => {
     const [route, setRoutes] = useState(<Introducao />);
 
-    const routeFunction = (name) => {
-
-        switch (name) {
-            case 'introducao':
-                setRoutes(<Introducao />);
-                break;
-            case 'coordenador':
-                setRoutes(<Coordenador />);
-                break;
-            case 'chefeDeFila':
-                setRoutes(<ChefeDeFila />);
-                break;
-            case 'bartender':
-                setRoutes(<Bartender />);
-                break;
-            case 'garcom':
-                setRoutes(<Garcom />);
-                break;
-            case 'cumim':
-                setRoutes(<Cumim />);
-                break;
-            case 'chefeDeCozinha':
-                setRoutes(<ChefeDeCozinha />);
-                break;
-            case 'auxiliarDeCozinha':
-                setRoutes(<AuxiliarDeCozinha />);
-                break;
-            case 'uniforme':
-                setRoutes(<Uniforme />);
-                break;
-            case 'crachas':
-                setRoutes(<Crachas />);
-                break;
-            // case 'Quiz':
-            //     setRoutes(<Quiz />);
-            //     break;
+    const routeFunction = (name = 'introducao') => {
+        if (name == 'introducao') {
+            setRoutes(<Introducao />);
+        } else if (name == 'coordenador') {
+            setRoutes(<Coordenador />);
+        } else if (name == 'chefeDeFila') {
+            setRoutes(<ChefeDeFila />);
+        } else if (name == 'bartender') {
+            setRoutes(<Bartender />);
+        } else if (name == 'garcom') {
+            setRoutes(<Garcom />);
+        } else if (name == 'cumim') {
+            setRoutes(<Cumim />);
+        } else if (name == 'chefeDeCozinha') {
+            setRoutes(<ChefeDeCozinha />);
+        } else if (name == 'auxiliarDeCozinha') {
+            setRoutes(<AuxiliarDeCozinha />);
+        } else if (name == 'uniforme') {
+            setRoutes(<Uniforme />);
+        } else if (name == 'crachas') {
+            setRoutes(<Crachas />);
         }
     }
 
